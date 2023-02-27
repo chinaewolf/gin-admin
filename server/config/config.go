@@ -28,4 +28,7 @@ type Server struct {
 
 	// 跨域配置
 	Cors CORS `mapstructure:"cors" json:"cors" yaml:"cors"`
+
+	//neo4j
+	Neo4j Neo4j `mapstructure:"neo4j" json:"neo4j" yaml:"neo4j"`
 }

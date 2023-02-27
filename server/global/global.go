@@ -15,12 +15,15 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/spf13/viper"
 	"gorm.io/gorm"
+
+	"github.com/neo4j/neo4j-go-driver/v4/neo4j"
 )
 
 var (
 	GVA_DB     *gorm.DB
 	GVA_DBList map[string]*gorm.DB
 	GVA_REDIS  *redis.Client
+	GVA_NEO4J  neo4j.Driver
 	GVA_CONFIG config.Server
 	GVA_VP     *viper.Viper
 	// GVA_LOG    *oplogging.Logger

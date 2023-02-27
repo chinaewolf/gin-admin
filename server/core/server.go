@@ -20,6 +20,9 @@ func RunWindowsServer() {
 		initialize.Redis()
 	}
 
+	// 初始化Neo4j服务
+	initialize.Neo4j()
+
 	// 从db加载jwt数据
 	if global.GVA_DB != nil {
 		system.LoadAll()
